@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>For your Home Training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="our-link" id="logininfo">
+            <ul>
+              <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+              <li><a href="/mypage"><span class="glyphicon glyphicon-user"></span> MyPage</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Top -->
+
+  <nav class="navbar navbar-default" id="menu">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main"><img class="main_logo" src="img/logo.png" alt="logo" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a href="/aboutus">ABOUT US</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WORKOUT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/workout_bodypart">by BodyPart</a></li>
+              <li><a href="/workout_difficulty">by Difficulty</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/customizing">CUSTOMIZING</a></li>
+              <li><a href="/ranking">RANKING</a></li>
+              <li><a href="/calculator">CALCULATOR</a></li>
+              <li><a href="/timer">TIMER/STOP WATCH</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMMUNITY<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/youtube">YOUTUBE</a></li>
+              <li><a href="/magazine">HEALTH MAGAZINE</a></li>
+              <li><a href="/news">HEALTH NEWS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/guide">CENTER GUIDE</a></li>
+              <li><a href="/notice">NOTICE</a></li>
+              <li><a href="/customer">CUSTOMER SERVICES</a></li>
+              <li><a href="/evaluation">EVALUATION</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="h1">Health News</h1>
+  </div>
+
+  <div class="container container3">
+    <center><h1 class="nh1">Health News & Issues</h1></center>
+
+    <center><a href="news.html"><button type="button" value="All" class="nbtn">All</button></a><a href="/news2"><button type="button" value="Health/Medical Science" class="nbtn1">Health/Medical Science</button></a><a href="/news3"><button type="button" value="Recipe/Food" class="nbtn2">Recipe/Food</button></a><a href="/news4"><button type="button" value="News/Issue" class="nbtn3">News/Issue</button></a></center>
+    <br><BR>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back5.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=23264882"><p class="post1">제주특별자치도</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=23264882&seriesNo=183623"><p class="post3">제주 소식</p></a>
+              <h3>집콕생활로 확"찐"자가 되어버 집콕러들을 위한 실내 운동법</h3>
+              <ul>
+                <li>제자리 걷기-운동법</li>
+                <li>스쿼트-운동법</li>
+                <li>플랭크-운동법</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/G6Y9TJj1" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://post-phinf.pstatic.net/MjAyMDA1MTVfMjQ3/MDAxNTg5NTE3ODM0MTU3.XOLfU-9q13kJK4c38xchfp-Mi_k51W0HuZWxWfIPH38g.2vOj9cdV8N0WK-Iksoal3thLrrwP4rTEyyT4PXflHOYg.JPEG/%EB%A6%AC%EC%8A%A4%ED%8B%B0%ED%81%B4-%EC%9A%B0%EB%A6%AC-%EA%B0%80%EC%A1%B1-%EB%A9%B4%EC%97%AD%EB%A0%A5-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%BD%94%EB%A1%9C%EB%82%9819-%EA%B7%B9%EB%B3%B5-%EB%A9%B4%EC%97%AD%EB%A0%A5-%EB%86%92%EC%9D%B4%EB%8A%94-4%EA%B0%80.jpg"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=12374975"><p class="post1">아시아투데이</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=12374975&seriesNo=219015"><p class="post3">쉽게 하나씩 따라하는 건강 습관</p></a>
+              <h3>"우리 가족 면역력 높이기" 코로나19 극복 면역력 높이는 4가지 방법</h3>
+
+              <ul>
+                <li>적게먹기</li>
+                <li>면역력 강화식품 먹기</li>
+                <li>심부 체온 올리기</li>
+                <li>몸 자극하기</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/G85di9EW" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA1MTNfNCAg/MDAxNTg5MzI4MTkyNDU5.9LEOf2AJydAcsKF7KgxY2hIggw3h-mYdfH2Y3pclwMAg.zTUNPhMPxDGaDz5bbaqVroR2eBzIJi-i0vOg8I9tUMcg.JPEG/202005120952441920.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=2923372"><p class="post1">매경헬스</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=2923372&seriesNo=558616"><p class="post3">매경헬스 뉴스</p></a>
+              <h3>혈액을 건강하게 유지하는 법</h3>
+
+              <ul>
+                <li>혈액 건강에 좋은 음식 섭취하기</li>
+                <li>혈액 건강 지키는 운동법과 습관</li>
+                <li>혈액 이상 유무 판단, 정기적인 검진 중요</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/GDEdUNF8" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="https://post-phinf.pstatic.net/MjAyMDA2MTZfNTQg/MDAxNTkyMjYzNzY1NDEy.g-V-l1EPefrcBPQQ8LzdE_hzOPgcKIpDLj-mFxiYrL0g.9FkXHEAoHmrGTeiiFjcbh8Pky1syXH3p7BpohDaOHZcg.JPEG/PS20061600095.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=3939441"><p class="post1">이데일리</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=572819&memberNo=3939441&prevVolumeNo=28542348"><p class="post3">코로나19</p></a>
+              <h3>코로나에 가장 안전한 나라는 스위스...한국은 몇 위?</h3>
+              <ul>
+                <li>3일자 홍콩 딥 날리지 그룹 리포트</li>
+                <li>정부효율성 높은 평가...보건체제는 상대적으로 낮아</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28542348&memberNo=3939441&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="http://blogfiles.naver.net/MjAxNzAxMzFfMjc2/MDAxNDg1ODY0Mjk5NjAy.9Cwvm38heHk5AUjRz4xULJST109vhjxmPG6xkWxu_Ywg.O3hTF71L95zsPnAWKlZNeYX2RXpm0qBWE1IU7fQbabAg.PNG.checkoff7202/%B8%B6%B4%C3%BF%EC%C0%AF-10.png"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=39007078"><p class="post1">리서치페이퍼</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=360299&memberNo=39007078&prevVolumeNo=28555075"><p class="post3">생물문화 Bio-culture</p></a>
+              <h3>[코로나19] '무증상' 감염자, 예상보다 훨씬 많을 것</h3>
+
+              <ul>
+                <li>각국에서 무증상 코로나19 감염자 사례가 보고되고 있다.</li>
+                <li>무증상 감염자 비율이 훨씬 높을 수 있다..</li>
+                <li>무증상 감염자 식별하기</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=444.2099914550781&py=7896.83984375&sx=444.2099914550781&sy=531.5800170898437&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28242207%26memberNo%3D11595512%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA2MTZfMTM4/MDAxNTkyMjc4OTQ4MTg1.cSCfQZNNNRDCnnWAcbI3ugkI95Me0WNmKSmDaAzKhbIg.DnG6PDRW6oM8aZzleCOU8jt0sEdM9oNQ4XlBDtnxjaQg.JPEG/GettyImages-821910898.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=37570062"><p class="post1">한경닷컴</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=580404&memberNo=37570062&prevVolumeNo=28212818"><p class="post3">세계는 지금</p></a>
+              <h3>[단독] 드디어 국산 코로나 치료제 첫 해외진출...이뮨메드 '대박'</h3>
+
+              <ul>
+                <li>정식 허가 아닌 치료목적 사용 방식 진출</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=387.3699951171875&py=8883.16015625&sx=387.3699951171875&sy=298.9499816894531&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28544962%26memberNo%3D38294797%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="https://post-phinf.pstatic.net/MjAyMDA2MDVfMTI3/MDAxNTkxMzIxMDIyNjUx.uaN8v69Rzt9ggqbfKja7MP48Eh_LDI3LrIdRh4Che2sg.CSAqb64ArHVAIWh5OPTs5QrA407D3hdwljGXe9hb4SQg.PNG/0602_720X500.png?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=30942091"><p class="post1">21세기북스</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=30942091&seriesNo=592459"><p class="post3">이번 달은 뉴요커</p></a>
+              <h3>'확찐자, 금스크'를 제친 코로나19 신조어 1위는?</h3>
+              <ul>
+                <li>상상코로나</li>
+                <li>금스크</li>
+                <li>확찐자</li>
+                <li>이 시국 여행</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28457105&memberNo=30942091&searchKeyword=%ED%99%95%EC%B0%90%EC%9E%90&searchRank=7" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://post-phinf.pstatic.net/MjAyMDA0MDZfMjQ1/MDAxNTg2MTUyNDcyODUz.i_RL17mkh_GttB0aMTfjgg6YRUgGU1mk8iQOgnxHu-Mg.ZyFvw5aEvhjfxecCH2L3QDTq13FBFSE1wGGhK4V2dksg.JPEG/image_6091253901586150111798.jpg?type=w1200"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=34329665"><p class="post1">마고의 패션뷰티</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=34329665&seriesNo=487381"><p class="post3">마고의 다이어트 노하우</p></a>
+              <h3>확찐자 주목! 몸짱 셀럽들의 건강한 다이어트 식단모음★</h3>
+
+              <ul>
+                <li>제철 음식을 건강하게</li>
+                <li>초스피드로 간단하게</li>
+                <li>편식없이 다양하게</li>
+                <li>노하우로 철저하게</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=27936334&memberNo=34329665&searchKeyword=%ED%99%95%EC%B0%90%EC%9E%90%20%EC%A3%BC%EB%AA%A9&searchRank=1" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="img/back8.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=24635978"><p class="post1">바디메이트</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=24635978&seriesNo=304500"><p class="post3">매경헬스 뉴스</p></a>
+              <h3><strong>홈트</strong>, 스트레칭부터 제대로 따라 하기</h3>
+
+              <ul>
+                <li>목 스트레칭</li>
+                <li>앉은 소고양이</li>
+                <li>누워서 한발 당겨 스트레칭</li>
+                <li>누워서 상체 트위스트</li>
+                <li>둔근 스트레칭</li>
+                <li>누운 나비 자세</li>
+                <li>누워서 전신 스트레칭</li>
+                <li>모관 운동</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28499014&memberNo=24635978&searchKeyword=%ED%99%88%ED%8A%B8&searchRank=1" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back9.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=11556787"><p class="post1">내일뭐하지</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=11556787&seriesNo=342343"><p class="post3">내일 건강해지자!</p></a>
+              <h3><strong>홈트</strong>레이닝, 나에게 맞는 <strong>홈트</strong> 유튜버 BEST 5</h3>
+              <ul>
+                <li>땅끄부부(Thankyou BUBU)</li>
+                <li>강하나 스트레칭</li>
+                <li>피지컬갤러리</li>
+                <li>Blogilates</li>
+                <li>요가소년</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28457714&memberNo=11556787&searchKeyword=%ED%99%88%ED%8A%B8&searchRank=3" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://img1.daumcdn.net/thumb/R720x0/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fkncom%2F2f29807ade5548338629aaceac401526.JPG"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=32392747"><p class="post1">어쩌다패피</p></a>
+              <h3>코로나로 강제 <strong>홈트</strong>중!! 나는 <strong>홈트</strong> 할때도 예쁜것만 입을래~</h3>
+
+              <ul>
+                <li>프런투라인</li>
+                <li>안다르</li>
+                <li>재킷</li>
+                <li>탱크탑</li>
+                <li>레깅스</li>
+                <li>팬츠</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/G85di9EW" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA2MDhfMjY3/MDAxNTkxNTk3NDYzMzIw.9XM-jrQWDx3lj7eQZQ8Tzn3t3p-bhGtSD6VhqGA-YAMg.u4Dg0usF-m4r4R5IyKndfpgRc4CQzbtHp11JXorC55sg.PNG/%ED%99%88%ED%8A%B8.PNG?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=24216069"><p class="post1">싱글즈</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=24216069&seriesNo=410982"><p class="post3">싱글즈 뷰티 라이프</p></a>
+              <h3>집콕시대, 각양각색 홈트 도구 추천</h3>
+
+              <ul>
+                <li>발레리나의 데벨로빼 도구</li>
+                <li>굽은 척추의 탄력성을 업</li>
+                <li>방구석 홈필라테스</li>
+                <li>뭉친 근육은 셀프 마사지</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28478901&memberNo=24216069&searchKeyword=%ED%99%88%ED%8A%B8&searchRank=10" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back19.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=25324157"><p class="post1">공감</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=225748&memberNo=25324157&prevVolumeNo=28416505"><p class="post3">공감인터뷰</p></a>
+              <h3>K- 방역 선두주자 바이오헬스 전문 업체 솔젠트의 성과</h3>
+              <ul>
+                <li>바이오헬스 전문 업체 솔젠트를 가다</li>
+                <li>“24시간이 모자라다”는 말 실감 날 정도로 분주</li>
+                <li>개발비 부담 있지만 ‘벤처 살려보자’ 도전…50여개국에 수출</li>
+                <li>개발·승인, 수출 등 정부와 선제적 협업</li>
+                <li>앞으로 분자진단 시장 수요 더 늘 것</li>
+                <li>중소기업 국가브랜드 '브랜드K' 한류 날개 달고 세계로 뻗는다</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=523.1599731445312&py=16125.259765625&sx=523.1599731445312&sy=493.67999267578125&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28416505%26memberNo%3D25324157%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://post-phinf.pstatic.net/MjAyMDA2MTdfMTYx/MDAxNTkyMzU5NzIxNTg4.zpCWwRME0AXhM7EkrzKARCEx8qho-YIiFiUw4Wfj9Egg.iFTzyaC2xayjnoVQk8B5YaKvWToMk0S5qHGEq568Lhcg.JPEG/%EB%8B%A8%EC%A7%A0%EC%9D%98%EC%9C%A0%ED%98%B9_%ED%8F%AC%EC%8A%A4%ED%8A%B8_01.jpg?type=w1200"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=44536862"><p class="post1">동행복권</p></a>
+
+              <h3>'단짠'의 유혹, 미각중독 자가진단으로 벗어나기</h3>
+
+              <ul>
+                <li>미각중독이란</li>
+                <li>자가진단 테스트로 벗어나기!</li>
+                <li>생활 속 변화로 미각중독, BYE~!</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=451.5799865722656&py=18447.369140625&sx=451.5799865722656&sy=207.3699951171875&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28553796%26memberNo%3D44536862%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA0MDJfNzAg/MDAxNTg1ODA5ODYxMDkx.BiU74NPoU2uTEIHITNMaujJ7PqZwk5GqNYwInEe2M-0g.Z-yXTOXFh5H89FzNGxGwINqzVgXta_VEcebwgajXoEUg.JPEG/31272_47115_3655.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=16745602"><p class="post1">시사주간</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=202298&memberNo=16745602&prevVolumeNo=27891325"><p class="post3">뉴스&이슈</p></a>
+              <h3>눈 충혈되고 분비물 나오면 ‘코로나 19’ 의심</h3>
+
+              <ul>
+                <li>중국 삼협대 연구팀… 결막염 증상 나타나</li>
+                <li>환자 38명 중 12명이 충혈현상 발생</li>
+
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=467.3699951171875&py=22221.05859375&sx=467.3699951171875&sy=586.3200073242187&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D27891325%26memberNo%3D16745602%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back10.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28452949&memberNo=48622516&navigationType=push"><p class="post1">캐시워크</p></a>
+              <p class="post2">시리즈</p><p class="post3">건강이 캐시다</p></a>
+              <h3>우리 몸을 이롭게 하는 단식의 누명(+간헐적 단식)</h3>
+              <ul>
+                <li>단식은 굶주림이 아니다</li>
+                <li>식사와 단식이 균형을 유지하면 우리 몸은 지방을 태우는 몸이 된다</li>
+                <li>비만의 원인 인슐린</li>
+                <li>비만 호르몬 잡는 간헐적 단식</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28452949&memberNo=48622516&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://post-phinf.pstatic.net/MjAyMDA2MTdfMjIy/MDAxNTkyMzg4NjQ0MjA5.OarKNHH4C5lVniIGKG2IXIz_Gda9RRmNWG_VzQw1Da0g.AufcmpXFK6IpOK1IYJPgvOo2U-BBrBxqFw1Ct3dbWYwg.JPEG/%EC%98%A4%EB%8A%98%EC%9D%98_%ED%95%9C%EB%A7%88%EB%94%94_0617.jpg?type=w1200"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=20182790"><p class="post1">질병관리본부 1339</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=571394&memberNo=20182790&prevVolumeNo=28559502"><p class="post3">코로나19</p></a>
+              <h3>코로나19 오늘의 한마디</h3>
+
+              <ul>
+                <li>코로나19 여름에도</li>
+                <li>기온변화에 관계없이 장기간 유행할 것</li>
+                <li>불필요한 외출, 모임 자제</li>
+                <li>집단감염 부르는 밀폐, 밀집, 밀접 접촉 줄이는 일상의 생활화, 습관화</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28559502&memberNo=20182790&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA2MTVfMTI4/MDAxNTkyMTgzNDg1ODky.4QztAwSIjpQts-5K9emY82arU3rDbjW8yhEPP5nMTNog.6_wVX66h0hG_cB5xNjNuWie2MaDW9n-gcIVob8QJXyAg.JPEG/shaunl.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=6289885"><p class="post1">코메디닷컴</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=265571&memberNo=6289885&prevVolumeNo=28533731"><p class="post3">닥터푸드</p></a>
+              <h3>육류만큼 단백질 풍부한 식물성 식품 5</h3>
+
+              <ul>
+                <li>두부</li>
+                <li>병아리콩</li>
+                <li>렌틸콩</li>
+                <li>퀴노아</li>
+                 <li>아몬드</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28533731&memberNo=6289885&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back11.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=23264882"><p class="post1">헬스경향</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?serieNo=313229&memberNo=28656674&prevVolumeNo=28484911"><p class="post3">비만과 건강</p></a>
+              <h3>더 이상 살이 안 빠진다? 생활습관 돌아봐야</h3>
+              <ul>
+                <li>아침 먹는 습관, 식욕조절에 좋아요</li>
+                <li>신진대사 기능 촉진하는 비타민D</li>
+                <li>오후 10시~새벽 2시 사이에 잠들기</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28484911&memberNo=28656674&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="img/back12.jpg"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/nhn?memberNo=27861801"><p class="post1">삼성서울병원</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=157384&memberNo=278610801&prevVolumeNo=28456959"><p class="post3">[건강생활백과]</p></a>
+              <h3>[비타민 탐구] 항산화 대표 주자, 비타민E!</h3>
+
+              <ul>
+                <li>#비타민E, 왜 중요할까요?</li>
+                <li>#비타민E, 어떤 식품에 많이 있을까요?</li>
+                <li>#비타민E, 어떻게 먹어야 할까요?</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28456959&memberNo=27861801&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA0MDlfNiAg/MDAxNTg2MzkyNDk2MDQy.rDN-6TRqGhQQYiab1fnejwbiOy6eOYJmGlm8L2r1KRwg.cESekzCGL1-fHFQYyfpA_L3fDLVrIH0mxyT2hSGw_E4g.JPEG/chombosan.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=6289885"><p class="post1">코메디닷컴</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=265572&memberNo=6289885&prevVolumeNo=27945878"><p class="post3">건강백과</p></a>
+              <h3>가볍지만 무시하지 말아야 할 코로나 증상 5</h3>
+
+              <ul>
+                <li>후각 상실</li>
+                <li>피로</li>
+                <li>가래와 인후통</li>
+                <li>두통과 몸살</li>
+                <li>매스꺼움, 구토, 설사</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=27945878&memberNo=6289885&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back18.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=11691867"><p class="post1">힐팁</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=532051&memberNo=11691867&prevVolumeNo=28486802"><p class="post3">news</p></a>
+              <h3>'크릴오일' 회수ㅡ 폐기 조치된 12개 제품 확인</h3>
+              <ul>
+                <li>식약처, 부적합 판정...항산화제, 초산에틸 등 초과 검출</li>
+                <li>"크릴오일은 일반식품, 질병 에방, 치료 허위 과대광고 주의"</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=518.9500122070312&py=7236.83984375&sx=518.9500122070312&sy=396.8399963378906&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28486802%26memberNo%3D11691867%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://post-phinf.pstatic.net/MjAyMDA2MTdfMTk5/MDAxNTkyMzY5NzQ5ODE4.sluHReZKAbAYHW73JXLjZBOs8Mhtx20OxXu3ZcphjMUg.K0yJ1tY2U1C4Skf1TPnScfeCHsgGHBdqOzeeXv15icEg.JPEG/mug_obj_159236975058348843.jpg?type=w1080"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=11419287"><p class="post1">보험닷컴</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?memberNo=11419287&seriesNo=597434&prevVolumeNo=28555520"><p class="post3">사회 이슈</p></a>
+              <h3>마스크 미착용자 버스 탑승 거부당해 실랑이 후 경찰에 붙잡히다!</h3>
+
+              <ul>
+                <li>마스크를 착용하지 않은 승객의 승차를 거부할 수 있도록...</li>
+                <li>탑승 거부 시 내리는 기존의 사업 정지 또는 과태료 같은 행정처분도 한시적으로 면제...</li>
+                <li>감염 위험을 낮추기 위해 마스크 착용 등 기본적 방역수칙이 중요...</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=444.2099914550781&py=7896.83984375&sx=444.2099914550781&sy=531.5800170898437&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28242207%26memberNo%3D11595512%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA2MDRfMTE1/MDAxNTkxMjY0MzM0NTY0.R-z9inAGrL45ucDLeai_yiTO-EwHTasxOcHj9WOBV7Mg.D8IuuUQpsumxWqC6B8rP3ljypzgaNP_pCmkY0nFZH0gg.JPEG/covid5.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=8914554"><p class="post1">시공사</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=591379&memberNo=8914554&prevVolumeNo=28461566"><p class="post3"><애니 앳킨스 컬렉션></p></a>
+              <h3>코로나19 시대, 그래픽 디자이너가 만든 ‘가짜’ 공중 보건 포스터 </h3>
+
+              <ul>
+                <li>그래픽 소품 디자이너 ‘애니 앳킨스’</li>
+                <li>‘가짜’ 공중 보건 포스터를 제작</li>
+                <li>‘가짜’ 공중 보건 포스터가 코로나 시대의 사람들을 응원하고 조금 더 힘을 내서 거리두기에 계속 힘쓸 것을 상기시키는 계기가 되길...</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=387.3699951171875&py=8883.16015625&sx=387.3699951171875&sy=298.9499816894531&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28544962%26memberNo%3D38294797%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="https://post-phinf.pstatic.net/MjAyMDA2MDFfMjQ1/MDAxNTkwOTczMjg5NTMy.iU8yanjyUnr8pybkzFrNxjeEGMjwXoh8BHvc4a4wpK4g.n_kxkk3zm_cFNf-w44-2gsZIl1_tLTY8bun-EB0kpJMg.JPEG/%EC%9D%B8%ED%8A%B8%EB%A1%9C.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=15460571"><p class="post1">데일리</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=185079&memberNo=15460571&prevVolumeNo=28416982"><p class="post3">푸드</p></a>
+              <h3>다이어트에 좋은 '새싹보리' 어떻게 먹어야 좋을까?</h3>
+              <ul>
+                <li>새싹보리란?</li>
+                <li>새싹보리 효능</li>
+                <li>새싹보리 부작용<li>
+                <li>새싹보리 고르는 법 및 보관 법</li>
+                <li>새싹보리 먹는 법</li>
+                <li>새싹보리 키우는 법</li>
+                <li>새싹보리분말 구매 꿀팁</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28416982&memberNo=15460571&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="img/back16.jpg"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=33799477"><p class="post1">소믈리에타임즈</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=418222&memberNo=33799477&prevVolumeNo=28442024"><p class="post3">FOOD STORY by Sommeliertimes</p></a>
+              <h3>"딸기는 베리가 아니다?!"...겉보기와 다른 음식 재료의 정의</h3>
+
+              <ul>
+                <li>브로콜리와 양배추, 콜리플라워는 '꽃'이다</li>
+                <li>퀴노아는 '씨앗'이다</li>
+                <li>아보카도와 호박 그리고 피망은 '과일'이다</li>
+                <li>코코아콩과 커피콩은 콩이 아닌 '과일 씨앗'이다</li>
+                <li>딸기, 블랙베리, 라즈베리는 베리(Berries)가 아니다</li>
+                <li>바나나, 토마토, 키위, 석류는 베리다</li>
+                <li>황설탕은 백설탕으로 만들어진다</li>
+                <li>화이트 초콜릿은 초콜릿이 아니다</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28442024&memberNo=33799477&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDAxMDdfMTM4/MDAxNTc4MzU0NjIzMjYy.a8c_b2OJaGPY0NMOw26LD0n0P02nv7Niv61t_doGoOUg.W3qXhSrUFI-ydq1GDN0SNg-poHsFCfvqRoEgKB4CvM8g.JPEG/image_1963659681578354534737.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=30942091"><p class="post1">21세기북스</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=568891&memberNo=30942091&prevVolumeNo=27229182"><p class="post3">자연식물식 다이어트 30일 챌린지</p></a>
+              <h3>3개월간 과일, 채소만 먹으면 생기는 놀라운 일</h3>
+
+              <ul>
+                <li>오랜 우울감과 대인기피증 극복</li>
+                <li>사라진 변비와 피부 트러블!</li>
+                <li>이제는 꿀잠, 불면증 안녕!</li>
+                <li>없어진 그 날의 생리통!</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=442.1099853515625&py=4463.15966796875&sx=442.1099853515625&sy=427.3699951171875&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D27229182%26memberNo%3D30942091%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back13.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=6089985"><p class="post1">인천나은병원</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?serieNo=546612&memberNo=6089985&prevVolumeNo=28546365"><p class="post3">+플러스 건강정보</p></a>
+              <h3>[닥터's TALK] 손저림 증상, 직장인의 흔한 질환 손목터널증후군 의심해보세요!</h3>
+              <ul>
+                <li>손저림, 손목터널증후군 증상</li>
+                <li>저림증상 방치하면.. 합병증 발생위험</li>
+                <li>초기치료가 중요합니다</li>
+                <li>손목터널증후군 예방법</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=28546365&memberNo=6089985&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="img/back14.jpg"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=37968322"><p class="post1">매디컬리포트</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=531846&memberNo=37968322&prevVolumeNo=28556575"><p class="post3">Health % Life</p></a>
+              <h3>먹는 콜라겐 제대로 알고 먹어야 하는 이유!</h3>
+
+              <ul>
+                <li>Q. 콜라겐이란 무엇일까?</li>
+                <li>Q. 콜라겐을 먹어야 하는 이유?</li>
+                <li>Q. 콜라겐 효과를 높이려면?</li>
+                <li>Q. 안전하게 콜라겐 효과를 얻으려면?</li>
+                <li>Q. 콜라겐과 함께 복용하면 효과 UP!</li>
+                <li>Q. 제품을 비교해본 결과?</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=854&px=407.2699890136719&py=2452.72998046875&sx=407.2699890136719&sy=414.54998779296875&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28556575%26memberNo%3D37968322%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="img/back15.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=713140"><p class="post1">강북삼성병원</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=425449&memberNo=7131400&prevVolumeNo=28503315"><p class="post3">행복건강이야기</p></a>
+              <h3>예쁜 신발이 건강을 해친다? 무지외반증 (재활의학과 이용택 교수)</h3>
+
+              <ul>
+                <li>무지외반증이란?</li>
+                <li>무지외반증의 주요 증상</li>
+                <li>무지외반증의 원인</li>
+                <li>무지외반각에 따른 3단계 변화</li>
+                <li>무지외반증 치료 방법</li>
+                <li>무지외반증 예방법</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=27945878&memberNo=6289885&navigationType=push" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="img/back17.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=43457750"><p class="post1">김소형 채널H</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=491470&memberNo=43457750&prevVolumeNo=28434953"><p class="post3">본초로 직접 만드는 꿀템, 본초테라피</p></a>
+              <h3>혈관청소에 좋은 과일주스! 혈관 속 콜레스테롤과 노폐물까지 깨끗하게~</h3>
+              <ul>
+                <li>혈관청소 해독주스 효능</li>
+                <li>혈관청소 해독주스 섭취 주의사항</li>
+                <li>김소형 한의사의 세줄 요약<li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=515.7899780273437&py=6006.31005859375&sx=515.7899780273437&sy=501.04998779296875&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28434953%26memberNo%3D43457750%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="http://blogfiles.naver.net/MjAxNzAxMzFfMjc2/MDAxNDg1ODY0Mjk5NjAy.9Cwvm38heHk5AUjRz4xULJST109vhjxmPG6xkWxu_Ywg.O3hTF71L95zsPnAWKlZNeYX2RXpm0qBWE1IU7fQbabAg.PNG.checkoff7202/%B8%B6%B4%C3%BF%EC%C0%AF-10.png"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=11595512"><p class="post1">MBN</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=135763&memberNo=11595512&prevVolumeNo=28242207"><p class="post3">[건강한 밥상레시피]</p></a>
+              <h3>체내 흡수율 90%, '면역력' 높이는 착한 '단백질'은?</h3>
+
+              <ul>
+                <li>외부 침입에 맞서 싸우는 항체의 주요 성분</li>
+                <li>헤모글로빈 형성의 필수 영양분</li>
+                <li>풍부한 단백실 성분</li>
+                <li>면역력 강화에 도움</li>
+                <li>하루 단백질 권장량 충족</li>
+                <li>유당 불내증</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=444.2099914550781&py=7896.83984375&sx=444.2099914550781&sy=531.5800170898437&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28242207%26memberNo%3D11595512%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA2MTZfMTM4/MDAxNTkyMjc4OTQ4MTg1.cSCfQZNNNRDCnnWAcbI3ugkI95Me0WNmKSmDaAzKhbIg.DnG6PDRW6oM8aZzleCOU8jt0sEdM9oNQ4XlBDtnxjaQg.JPEG/GettyImages-821910898.jpg?type=w1200" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <a href="https://post.naver.com/my.nhn?memberNo=38294797"><p class="post1">엘라임의 파우치</p></a>
+              <p class="post2">시리즈</p><a href="https://post.naver.com/my/series/detail.nhn?seriesNo=536089&memberNo=38294797&prevVolumeNo=28544962"><p class="post3">레시피</p></a>
+              <h3>황금쥬스 :: ABC쥬스 만드는 법</h3>
+
+              <ul>
+                <li>ABC쥬스란?</li>
+                <li>ABC쥬스의 효능</li>
+                <li>ABC쥬스의 부작용</li>
+                <li>비트를 고르는 법</li>
+                <li>ABC쥬스 만드는 법</li>
+              </ul>
+            </div>
+          </div>
+          <a href="https://cc.naver.com/cc?a=ctd.postlist&r=&i=&bw=923&px=387.3699951171875&py=8883.16015625&sx=387.3699951171875&sy=298.9499816894531&m=1&nsc=Mpost.home&u=https%3A%2F%2Fpost.naver.com%2Fviewer%2FpostView.nhn%3FvolumeNo%3D28544962%26memberNo%3D38294797%26navigationType%3Dpush" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="container-fluid container1">
+    <div class="row">
+      <div class="col-sm-4 f1">
+        <p class="p11">PRODUCER. HLS</p>
+        <p class="p11">Hyun Ji Yeon</p>
+        <p class="p11">Lee Seung Yeon</p>
+        <p class="p11">So Hee Jin</p>
+      </div>
+
+      <div class="col-sm-4 f2">
+        <p class="p14"><a href="notice.html">공지사항</a></p>
+        <p class="p14"><a href="notice.html">이용약관</a></p>
+        <p class="p14"><a href="notice.html">개인정보처리방침</a></p>
+      </div>
+
+      <div class="col-sm-4 f3">
+        <p class="p11">HOMT</p>
+        <span id="span" class="glyphicon glyphicon-map-marker logo glyphicon2"></span><p class="p12"> 충청북도 청주시 서원구 충대로1</p>
+        <p class="p13">충북대학교 소프트웨어학과</p>
+        <span id="span" class="glyphicon glyphicon-phone-alt logo glyphicon2"></span><p class="p12"> 043-261-2260</p>
+      </div>
+    </div>
+    <hr class="hr1">
+    <center><p class="last">Copyright 2020 OpenSource Web Software. All Rights Reserved.</p></center>
+  </div>
+
+  </body>
+</html>

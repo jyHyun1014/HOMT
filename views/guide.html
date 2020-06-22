@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>For your Home Training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="our-link" id="logininfo">
+            <ul>
+              <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+              <li><a href="/mypage"><span class="glyphicon glyphicon-user"></span> MyPage</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Top -->
+
+  <nav class="navbar navbar-default" id="menu">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main"><img class="main_logo" src="img/logo.png" alt="logo" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a href="/aboutus">ABOUT US</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WORKOUT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/workout_bodypart">by BodyPart</a></li>
+              <li><a href="/workout_difficulty">by Difficulty</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/customizing">CUSTOMIZING</a></li>
+              <li><a href="/ranking">RANKING</a></li>
+              <li><a href="/calculator">CALCULATOR</a></li>
+              <li><a href="/timer">TIMER/STOP WATCH</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMMUNITY<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/youtube">YOUTUBE</a></li>
+              <li><a href="/magazine">HEALTH MAGAZINE</a></li>
+              <li><a href="/news">HEALTH NEWS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/guide">CENTER GUIDE</a></li>
+              <li><a href="/notice">NOTICE</a></li>
+              <li><a href="/customer">CUSTOMER SERVICES</a></li>
+              <li><a href="/evaluation">EVALUATION</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="h1">Center Guide</h1>
+  </div>
+
+  <center><div class="container3">
+    <center><h1 class="googlemap">Center Guide</h1></center>
+  <div id="map" style="width:800px; height: 500px"></div>
+
+  <script>
+  function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var CBNU = new google.maps.LatLng(36.628568,127.455958);
+    var Center1 = new google.maps.LatLng(36.634425,127.455089);
+    var Center2 = new google.maps.LatLng(36.626209,127.449587);
+    var Center3 = new google.maps.LatLng(36.633820,127.457629);
+    var Center4 = new google.maps.LatLng(36.632442,127.460813);
+    var mapOptions = {
+      center: CBNU,
+      zoom: 15
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+    var marker = new google.maps.Marker({
+    position:CBNU
+
+    });
+    marker.setMap(map);
+
+    google.maps.event.addListener(marker,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div>' +
+      '<h3 style="color: #6bbac9;display:inline;">CBNU</h3><br><br>' +
+      '<p>Location:<br>충북 청주시 서원구 충대로 1 충북대학교</p>' +
+      '<p>Tel: 043-261-2114</p>' +
+      '</div>'
+    });
+    infowindow.open(map,marker);
+    });
+
+    var marker2 = new google.maps.Marker({
+    position:Center1
+    });
+    marker2.setMap(map);
+
+    google.maps.event.addListener(marker2,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div>' +
+      '<h3 style="color: #6bbac9;display:inline;">크로스핏 청주</h3><br><br>' +
+      '<p>Location:<br>충북 청주시 흥덕구 사직대로 68</p>' +
+      '<p>Tel: 043-264-9688</p>' +
+      '</div>'
+    });
+    infowindow.open(map,marker2);
+    });
+
+    var marker3 = new google.maps.Marker({
+    position:Center2
+    });
+    marker3.setMap(map);
+
+    google.maps.event.addListener(marker3,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div>' +
+      '<h3 style="color: #6bbac9;display:inline;">설봉헬스</h3><br><br>' +
+      '<p>Location:<br>충북 청주시 흥덕구 성봉로237번길 1</p>' +
+      '<p>Tel: 043-272-3535</p>' +
+      '</div>'
+    });
+    infowindow.open(map,marker3);
+    });
+
+    var marker4 = new google.maps.Marker({
+    position:Center3
+    });
+    marker4.setMap(map);
+
+    google.maps.event.addListener(marker4,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div>' +
+      '<h3 style="color: #6bbac9;display:inline;">모던헬스클럽</h3><br><br>' +
+      '<p>Location:<br>충북 청주시 서원구 내수동로 93</p>' +
+      '<p>Tel: 043-266-9637</p>' +
+      '</div>'
+    });
+    infowindow.open(map,marker4);
+    });
+
+    var marker5 = new google.maps.Marker({
+    position:Center4
+    });
+    marker5.setMap(map);
+
+    google.maps.event.addListener(marker5,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content: '<div>' +
+      '<h3 style="color: #6bbac9;display:inline;">맥시멈</h3><br><br>' +
+      '<p>Location:<br>충북 청주시 서원구 1순환로 686</p>' +
+      '<p>Tel: 1661-0686</p>' +
+      '</div>'
+    });
+    infowindow.open(map,marker5);
+    });
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKcbUBYjUJygufFyL-S6TI-lt3x4JG5jY&callback=myMap"></script>
+</div></center>
+
+
+  <div class="container-fluid container1">
+    <div class="row">
+      <div class="col-sm-4 f1">
+        <p class="p11">PRODUCER. HLS</p>
+        <p class="p11">Hyun Ji Yeon</p>
+        <p class="p11">Lee Seung Yeon</p>
+        <p class="p11">So Hee Jin</p>
+      </div>
+
+      <div class="col-sm-4 f2">
+        <p class="p14"><a href="notice.html">공지사항</a></p>
+        <p class="p14"><a href="notice.html">이용약관</a></p>
+        <p class="p14"><a href="notice.html">개인정보처리방침</a></p>
+      </div>
+
+      <div class="col-sm-4 f3">
+        <p class="p11">HOMT</p>
+        <span id="span" class="glyphicon glyphicon-map-marker logo glyphicon2"></span><p class="p12"> 충청북도 청주시 서원구 충대로1</p>
+        <p class="p13">충북대학교 소프트웨어학과</p>
+        <span id="span" class="glyphicon glyphicon-phone-alt logo glyphicon2"></span><p class="p12"> 043-261-2260</p>
+      </div>
+    </div>
+    <hr class="hr1">
+    <center><p class="last">Copyright 2020 OpenSource Web Software. All Rights Reserved.</p></center>
+  </div>
+
+  </body>
+</html>

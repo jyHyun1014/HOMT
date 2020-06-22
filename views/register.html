@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>For your Home Training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css">
+<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="text-center">
+
+  <!-- 회원가입 폼 -->
+  <div class="row" id="index_register">
+    <div class="col-xs-2 col-sm-4"></div>
+    <div class="col-xs-8 col-sm-4">
+      <form class="from-input form-register" id="formRegister" action="/auth/register" method="POST">
+        <img class="form-logo" src="img/logo.png" alt="logo.png" width="100" height="50">
+        <h1 class="h3 mb-3 font-weight-normal">Create New Account</h1>
+        <!--ID는 문서에서 단 하나의 엘리먼트에서만 사용할 수 있음-->
+        <!--id를 name으로 수정함, value 값 추가함-->
+        <!--for 속성: 해당 속성과 같은 id를 가진 input과 연결됨-->
+        <!--라디오 버튼은 ul로 연결되어야 함-->
+        <p>Gender</p>
+        <ul>
+          <li>
+            <input type="radio" id="male" name="gender" value=0 required>
+            <label for="male">Male</label><br>
+          </li>
+          <li>
+            <input type="radio" id="female" name="gender" value=1>
+            <label for="female">Female</label>
+          </li>
+        </ul>
+
+        <label for="firstname" class="sr-only">First Name</label>
+        <input type="text" class="form-control" name="firstname" placeholder="First Name: 이름" required>
+
+        <label for="lastname" class="sr-only">Last Name</label>
+        <input type="text" class="form-control" name="lastname" placeholder="Last Name: 성" required>
+
+        <label for="email" class="sr-only">Email Address</label>
+        <input type="email" class="form-control" name="email" placeholder="Email: homt@software.com" required>
+
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
+
+        <label for="phone" class="sr-only">Phone</label>
+        <input type="tel" class="form-control" name="phone" placeholder="Phone: 010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+
+        <label for="birth" class="sr-only">Birth Date</label>
+        <input type="date" class="form-control" name="birth" placeholder="Birth Date" required>
+
+        <button class="btn btn-lg btn-primary btn-control" type="submit">Sign up</button>
+
+        <p class="text-advice">HOMT의 서비스를 이용하기 위해 가입하세요</p>
+        <p class="text-muted"> 이미 회원이신가요? <a href="/login">로그인</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

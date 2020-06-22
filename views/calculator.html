@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>For your Home Training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="our-link" id="logininfo">
+            <ul>
+              <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+              <li><a href="/mypage"><span class="glyphicon glyphicon-user"></span> MyPage</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Top -->
+
+  <nav class="navbar navbar-default" id="menu">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main"><img class="main_logo" src="img/logo.png" alt="logo" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a href="/aboutus">ABOUT US</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WORKOUT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/workout_bodypart">by BodyPart</a></li>
+              <li><a href="/workout_difficulty">by Difficulty</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/customizing">CUSTOMIZING</a></li>
+              <li><a href="/ranking">RANKING</a></li>
+              <li><a href="/calculator">CALCULATOR</a></li>
+              <li><a href="/timer">TIMER/STOP WATCH</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMMUNITY<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/youtube">YOUTUBE</a></li>
+              <li><a href="/magazine">HEALTH MAGAZINE</a></li>
+              <li><a href="/news">HEALTH NEWS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/guide">CENTER GUIDE</a></li>
+              <li><a href="/notice">NOTICE</a></li>
+              <li><a href="/customer">CUSTOMER SERVICES</a></li>
+              <li><a href="/evaluation">EVALUATION</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="h1">Calculator</h1>
+  </div>
+
+  <div class="container container3">
+  <form name="epley">
+  <h1>1RM Calculator</h1>
+  <hr>
+  <label class="callabel">weight:</label> <input type="text" id="weight" name="weight1" class="cclass">
+  <br>
+  <label class="callabel">Rep:</label> <input type="text" id="rep" name="rep1">
+  <br>
+  <label class="callabel">Epley Formula:</label> <input type="text" name="epley1">
+  <br>
+  <label class="callabel">Brzycki Formula:</label> <input type="text" name="brzycki1">
+  <br>
+ <label class="callabel">Wendler Formula:</label> <input type="text" name="wendler1">
+  <br>
+  <input type="button" value="Reset" onClick="myReset()" class="cbtn">
+  <input type="button" value="Calculate" onClick="myFunction()" class="cbtn">
+  </form>
+
+  <script language="javascript">
+  function myFunction(){
+      var x, y, z;
+      x = Number(document.epley.weight1.value);
+      y = Number(document.epley.rep1.value);
+
+      document.epley.epley1.value = Math.round(x*(1+(y/30)));
+      document.epley.brzycki1.value = Math.round(x/(1.0278-(0.0278*y)));
+      document.epley.wendler1.value = Math.round((x*y*0.0333)+x);
+
+  }
+  function myReset(){
+      document.epley.weight1.value = "";
+      document.epley.rep1.value ="";
+      document.epley.epley1.value="";
+      document.epley.brzycki1.value="";
+      document.epley.wendler1.value="";
+  }
+
+  </script>
+  </div>
+
+  <div class="container container3">
+  <form action="" id="tdee" onsubmit="return false;">
+      <fieldset>
+          <h1>Calculate your TDEE!</h1>
+          <hr>
+          <h4>Enter your information</h4>
+          <br>
+          <label class="callabel">Age:</label>
+          <input type="text" name="age" id="age"/>
+          <br>
+          <label class="callagel1">Gender </label> <input type="radio" class="callabel2" name="gender" value="male" onclick="myFunction()"/>Male
+          <input type="radio" class="callabel2" name="gender" value="female" onclick="myFunction()"/>Female
+          <br>
+          <label class="callabel">Weight(lb):</label>
+          <input type="text" name="weight" id="weight"/>
+          <br>
+          <label class="callabel">Height(inches):</label>
+          <input type="text" name="height" id="height"/>
+          <br>
+          <label class="callabel">Activity:</label>
+          <select id="activity" name="activity" onchange="myFunction()" class="cselect">
+          <option value="None">Select Activity Level</option>
+          <option value="sed">Sedentary (Office job)</option>
+          <option value="lig">Lightly Active (1-2 days/week)</option>
+          <option value="mod">Moderately Active (3-5 days/week)</option>
+          <option value="ver">Very Active (6-7 days/week)</option>
+          <option value="ext">Extremely Active (2x per day)</option>
+          </select>
+          <br>
+
+          <input type="button" value="Calculate" onClick="getTdee()" class="cbtn">
+          <div id="totalTdee"></div>
+
+          </fieldset>
+      </form>
+
+
+          <script>
+          var genChoice = new Array();
+          genChoice["male"]=66;
+          genChoice["female"]=655;
+
+          function getAge(){
+              var theForm = document.forms["tdee"];
+              var age = theForm.elements["age"];
+              var ag =0;
+              if(age.value!=0){
+                  ag = parseInt(age.value);
+              }
+              return ag;
+          }
+
+          function getGender()
+          {
+
+          var gen = 0;
+          var theForm = document.forms["tdee"];
+          var selectedGender =theForm.elements["gender"];
+
+          for(var i = 0; i <selectedGender.length; i++){
+              if(selectedGender[i].checked){
+              gen = genChoice[selectedGender[i].value];
+              break;
+              }
+          }
+          return gen;
+
+          }
+
+          var activity_level = new Array();
+          activity_level["None"]=0;
+          activity_level["sed"]=1.2;
+          activity_level["lig"]=1.375;
+          activity_level["mod"]=1.55;
+          activity_level["ver"]=1.725;
+          activity_level["ext"]=1.9;
+
+          function getActivity(){
+              var act=0;
+              var theForm = document.forms["tdee"];
+              var selectedActivity = theForm.elements["activity"];
+              act = activity_level[selectedActivity.value];
+              return act;
+          }
+
+          function getWeight(){
+              var theForm = document.forms["tdee"];
+              var weight = theForm.elements["weight"];
+              var wei =0;
+              if(weight.value!=""){
+                  wei = parseInt(weight.value)/2.2046226218;
+              }
+              return wei;
+          }
+          function getHeight(){
+              var theForm = document.forms["tdee"];
+              var height = theForm.elements["height"];
+              var hei =0;
+              if(height.value!=0){
+                  hei = parseInt(height.value)*2.54;
+              }
+              return hei;
+          }
+
+          function getTdee(){
+
+              if(getGender() == 655){
+
+                  tdee = (getGender() + (9.6*getWeight()) + (1.8*getHeight() - (4.7*getAge())))*getActivity();
+              }
+              else if(getGender() == 66){
+
+                  tdee = (getGender() + (13.7*getWeight()) + (5*getHeight() - (6.8*getAge())))*getActivity();
+              }
+
+              document.getElementById('totalTdee').innerHTML = "Total TDEE is "+Math.round(tdee) + " Calories per day";
+
+          }
+          </script>
+          <br>
+  </div>
+
+
+  <div class="container container3">
+      <form name ="bulk" action=“” id=“bulkOrCut” onsubmit=“return false;”>
+    <fieldset>
+      <h1>Bulk, Cut, or Maintenance</h1>
+      <hr>
+      <label>Enter your TDEE</label>
+      <br>
+      <span><label class="callabel">TDEE:</label></span>
+      <input type=“text” name=“tdee” id=“tdee”/>
+      <br>
+      <span><label class="callabel">Bulk, Cut, or Maintenance(Diet Plan): </label></span>
+      <select id=“dietPlan” name=“dietPlan” onchange=“myFunction()” class="cselect">
+      <option value=“None”> Select Diet Plan </option>
+      <option value=“gain1”> Gain 1lb per week</option>
+      <option value=“gain.5”> Gain 0.5lb per week </option>
+      <option value=“maintain”> Maintain my current weight </option>
+      <option value=“lose.5”> Lose 0.5lb per week </option>
+      <option value=“lose1”> Lose 1lb per week </option>
+      </select>
+      <br>
+      <span><label class="callabel">Macronutrient Percentage:</label></span>
+      <select id=“macro” name=“macro” onchange=“myFunction()” class="cselect">
+      <option value=“None”> Select Macronutrient Percentage </option>
+      <option value=“highCarbs”> 25% Protein, 55% Carbs, and 20% Fat</option>
+      <option value=“balanced”> 30% Protein, 40% Carbs, and 30% Fat</option>
+      <option value=“highFatProtein”> 35% Protein, 25% Carbs, and 40% Fat</option>
+      </select>
+      <br>
+          <label class="callabel">Protein:</label> <input type="text" name="protein1">
+          <br>
+          <label class="callabel">Carbohydrate:</label> <input type="text" name="carb1">
+          <br>
+          <label class="callabel">Fat:</label> <input type="text" name="fat1">
+          <br>
+          <input type="button" value="Calculate" onClick="getMacro()" class="cbtn">
+          <div id="totalMacro"></div>
+    </fieldset>
+      </form>
+
+  <script>
+    function getTdee(){
+      var theForm = document.forms[“bulkOrCut”];
+      var tdee = theForm.elements[“tdee”];
+      var tde = 0;
+      if(tdee.value!=0){
+        tde = parseInt(tdee.value);
+      }
+
+    return tde;
+    }
+
+    var diet_plan = new array();
+    diet_plan[“None”]= 0;
+    diet_plan[“gain1”]=500;
+    diet_plan[“gain0.5”]=250;
+    diet_plan[“maintain”]=0;
+    diet_plan[“lose.5”]=-250;
+    diet_plan[“lose1”]=-500;
+
+    function getDietPlan(){
+      var diet = 0;
+      var theForm = document.forms[“bulkOrCut”];
+      var selectedDietPlan = theForm.element[“dietPlan”];
+      diet = diet_plan[selectedDietPlan.value];
+      return diet;
+    }
+
+    var macro_percentage = new array();
+    macro_percentage[“None”]=0;
+    macro_percentage[“highCarbs”]=1;
+    macro_percentage[“balanced”]=2;
+    macro_percentage[“highFatProtein”]=3;
+
+    function getMacro(){
+      var macro = 0;
+      var theForm = document.forms[“bulkOrCut”];
+      var selecteMacro = theForm.element[“macro”];
+      macro = macro_percentage[selectedMacro.value];
+      return macro;
+    }
+
+    function getMacro(){
+
+      if(get macro == 1){
+        protein2 = Math.round((getTdee() + getDietPlan()) * .25);
+              carb2 = Math.round(getTdee() + getDietPlan()) * .55);
+              fat2 = Math.round(getTdee() + getDietPlan()) * .20);
+
+      }
+          document.getElementsById('totalMacro').innerHTML = "Protein: " + protein2 + ". Carbohydrate: " + carb2 + ". Fat: " + fat2;
+    }
+
+    </script>
+  </div>
+
+
+
+  <div class="container-fluid container1">
+    <div class="row">
+      <div class="col-sm-4 f1">
+        <p class="p11">PRODUCER. HLS</p>
+        <p class="p11">Hyun Ji Yeon</p>
+        <p class="p11">Lee Seung Yeon</p>
+        <p class="p11">So Hee Jin</p>
+      </div>
+
+      <div class="col-sm-4 f2">
+        <p class="p14"><a href="notice.html">공지사항</a></p>
+        <p class="p14"><a href="notice.html">이용약관</a></p>
+        <p class="p14"><a href="notice.html">개인정보처리방침</a></p>
+      </div>
+
+      <div class="col-sm-4 f3">
+        <p class="p11">HOMT</p>
+        <span id="span" class="glyphicon glyphicon-map-marker logo glyphicon2"></span>
+        <p class="p12"> 충청북도 청주시 서원구 충대로1</p>
+        <p class="p13">충북대학교 소프트웨어학과</p>
+        <span id="span" class="glyphicon glyphicon-phone-alt logo glyphicon2"></span>
+        <p class="p12"> 043-261-2260</p>
+      </div>
+    </div>
+    <hr class="hr1">
+    <center>
+      <p class="last">Copyright 2020 OpenSource Web Software. All Rights Reserved.</p>
+    </center>
+  </div>
+
+  </script>
+</body>
+
+</html>

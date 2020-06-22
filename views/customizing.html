@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>For your Home Training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="our-link" id="logininfo">
+            <ul>
+              <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+              <li><a href="/mypage"><span class="glyphicon glyphicon-user"></span> MyPage</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Top -->
+
+  <nav class="navbar navbar-default" id="menu">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main"><img class="main_logo" src="img/logo.png" alt="logo" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a href="/aboutus">ABOUT US</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WORKOUT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/workout_bodypart">by BodyPart</a></li>
+              <li><a href="/workout_difficulty">by Difficulty</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/customizing">CUSTOMIZING</a></li>
+              <li><a href="/ranking">RANKING</a></li>
+              <li><a href="/calculator">CALCULATOR</a></li>
+              <li><a href="/timer">TIMER/STOP WATCH</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMMUNITY<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/youtube">YOUTUBE</a></li>
+              <li><a href="/magazine">HEALTH MAGAZINE</a></li>
+              <li><a href="/news">HEALTH NEWS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/guide">CENTER GUIDE</a></li>
+              <li><a href="/notice">NOTICE</a></li>
+              <li><a href="/customer">CUSTOMER SERVICES</a></li>
+              <li><a href="/evaluation">EVALUATION</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="h1">Customizing</h1>
+  </div>
+
+
+  <div class="container container3">
+
+      <center><div class="block1">
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="workout" class="select">
+              <option value="">Select</option>
+                <optgroup label="Lunge">
+                  <option value="">Side Lunge</option>
+                  <option value="">Forward Lunge</option>
+                  <option value="">Forward Lunge with Arm Drivers</option>
+                  <option value="">Glute Activation Lunges</option>
+                </optgroup>
+                <optgroup label="Plank">
+                  <option value="">Front Plank</option>
+                  <option value="">Side Plank with Bent knee</option>
+                  <option value="">Side Plank</option>
+                  <option value="">Side Plank with Straight Leg</option>
+                </optgroup>
+                <optgroup label="Crunch">
+                  <option value="">Crunch</option>
+                  <option value="">Supine Reverse Crunch</option>
+                </optgroup>
+                <optgroup label="Push-up">
+                  <option value="">Push-up</option>
+                  <option value="">Bent Knee Push-up</option>
+                  <option value="">Push-up with Single-leg Raise</option>
+                  <option value="">Hip Rotations(Push-up Position)</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                횟수 : <input type="number" class="times">
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <form>
+                세트 수 : <input type="number" class="set">
+              </form>
+            </div>
+          </div>
+      </div>
+
+      <div class="block2">
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="workout" class="select">
+              <option value="">Select</option>
+                <optgroup label="Lunge">
+                  <option value="">Side Lunge</option>
+                  <option value="">Forward Lunge</option>
+                  <option value="">Forward Lunge with Arm Drivers</option>
+                  <option value="">Glute Activation Lunges</option>
+                </optgroup>
+                <optgroup label="Plank">
+                  <option value="">Front Plank</option>
+                  <option value="">Side Plank with Bent knee</option>
+                  <option value="">Side Plank</option>
+                  <option value="">Side Plank with Straight Leg</option>
+                </optgroup>
+                <optgroup label="Crunch">
+                  <option value="">Crunch</option>
+                  <option value="">Supine Reverse Crunch</option>
+                </optgroup>
+                <optgroup label="Push-up">
+                  <option value="">Push-up</option>
+                  <option value="">Bent Knee Push-up</option>
+                  <option value="">Push-up with Single-leg Raise</option>
+                  <option value="">Hip Rotations(Push-up Position)</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                횟수 : <input type="number" class="times">
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <form>
+                세트 수 : <input type="number" class="set">
+              </form>
+            </div>
+          </div>
+      </div>
+
+      <div class="block3">
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="workout" class="select">
+              <option value="">Select</option>
+                <optgroup label="Lunge">
+                  <option value="">Side Lunge</option>
+                  <option value="">Forward Lunge</option>
+                  <option value="">Forward Lunge with Arm Drivers</option>
+                  <option value="">Glute Activation Lunges</option>
+                </optgroup>
+                <optgroup label="Plank">
+                  <option value="">Front Plank</option>
+                  <option value="">Side Plank with Bent knee</option>
+                  <option value="">Side Plank</option>
+                  <option value="">Side Plank with Straight Leg</option>
+                </optgroup>
+                <optgroup label="Crunch">
+                  <option value="">Crunch</option>
+                  <option value="">Supine Reverse Crunch</option>
+                </optgroup>
+                <optgroup label="Push-up">
+                  <option value="">Push-up</option>
+                  <option value="">Bent Knee Push-up</option>
+                  <option value="">Push-up with Single-leg Raise</option>
+                  <option value="">Hip Rotations(Push-up Position)</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                횟수 : <input type="number" class="times">
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <form>
+                세트 수 : <input type="number" class="set">
+              </form>
+            </div>
+          </div>
+      </div>
+
+      <div class="block4">
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="workout" class="select">
+              <option value="">Select</option>
+                  <option value="">Contralateral Limg Raises</option>
+                  <option value="">Downward-facing dog</option>
+                  <option value="">Cobra</option>
+                  <option value="">Glute Bridge</option>
+                  <option value="">Squat Jumps</option>
+                  <option value="">Side Lying Hip Adduction</option>
+                  <option value="">Single Leg Stand</option>
+                  <option value="">Standing Calf Raises</option>
+                  <option value="">Supine Pelvic Tilts</option>
+                  <option value="">Supermans</option>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                횟수 : <input type="number" class="times">
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <form>
+                세트 수 : <input type="number" class="set">
+              </form>
+            </div>
+          </div>
+      </div>
+
+      <div class="block5">
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="workout" class="select">
+              <option value="">Select</option>
+                  <option value="">Contralateral Limg Raises</option>
+                  <option value="">Downward-facing dog</option>
+                  <option value="">Cobra</option>
+                  <option value="">Glute Bridge</option>
+                  <option value="">Squat Jumps</option>
+                  <option value="">Side Lying Hip Adduction</option>
+                  <option value="">Single Leg Stand</option>
+                  <option value="">Standing Calf Raises</option>
+                  <option value="">Supine Pelvic Tilts</option>
+                  <option value="">Supermans</option>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                횟수 : <input type="number" class="times">
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <form>
+                세트 수 : <input type="number" class="set">
+              </form>
+            </div>
+          </div>
+      </div>
+
+      <div class="block6">
+        <div class="row">
+          <div class="col-sm-4">
+            <select name="workout" class="select">
+              <option value="">Select</option>
+                  <option value="">Contralateral Limg Raises</option>
+                  <option value="">Downward-facing dog</option>
+                  <option value="">Cobra</option>
+                  <option value="">Glute Bridge</option>
+                  <option value="">Squat Jumps</option>
+                  <option value="">Side Lying Hip Adduction</option>
+                  <option value="">Single Leg Stand</option>
+                  <option value="">Standing Calf Raises</option>
+                  <option value="">Supine Pelvic Tilts</option>
+                  <option value="">Supermans</option>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <form>
+                횟수 : <input type="number" class="times">
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <form>
+                세트 수 : <input type="number" class="set">
+              </form>
+            </div>
+          </div>
+      </div></center>
+
+      <form action="" name="frm">
+        <div align="center">
+          <br>
+
+          <select id="selid" name="myChoice" class="timerb">
+            <option value="180">select time</option>
+            <option value="3600">1시간</option>
+            <option value="1800">30분</option>
+            <option value="900">15분</option>
+            <option value="600">10분</option>
+            <option value="300">5분</option>
+            <option value="60">1분</option>
+          </select>
+
+          <input type="button" value="Start" onclick="timer()" class="btn4">
+          <br><br>
+
+          <span id="countdown" class="span1">남은시간</span>
+          <br><br>
+
+        </div>
+
+      </form>
+
+      <script type="text/javascript">
+        var count = 0;
+        var time = 0;
+        var choice = 0;
+
+        function timer() {
+
+        clearInterval(time);	// 타이머 우선 초기화 시켜주기(time initialize)
+      /*
+
+      ID로 가져오기
+      // select의 value를 가져오기 : value
+      var val = document.getElementById("selid").value;
+      alert(val);	// 확인용
+      // select의 index값을 가져오기 : selectedIndex
+      var indexNum = document.getElementById("selid").selectedIndex;
+      alert(indexNum);	// 확인용
+      */
+
+
+      // 	name으로 index 찾기
+        choice = document.frm.myChoice.selectedIndex;
+      //	alert(choice);
+
+      // 찾은 index로 value찾기
+        count = parseInt(document.frm.myChoice.options[choice].value);
+      //		alert(count);
+
+      // 타이머 함수 1초씩 호출하는 함수 만들기
+        time = setInterval("myTimer()",1000);
+
+      }
+      function myTimer() {
+        count = count - 1; // 타이머 선택 숫자에서 -1씩 감산함(갱신되기 때문)
+
+        document.getElementById("countdown").innerHTML
+        = "완료까지 <b>" + count +"</b>초 남았습니다.";
+        if(count == 0) {
+          clearInterval(time);	// 시간 초기화
+          alert("시간이 완료되었습니다.")
+        }
+      }
+
+      </script>
+
+  </div>
+
+
+  <div class="container-fluid container1">
+    <div class="row">
+      <div class="col-sm-4 f1">
+        <p class="p11">PRODUCER. HLS</p>
+        <p class="p11">Hyun Ji Yeon</p>
+        <p class="p11">Lee Seung Yeon</p>
+        <p class="p11">So Hee Jin</p>
+      </div>
+
+      <div class="col-sm-4 f2">
+        <p class="p14"><a href="notice.html">공지사항</a></p>
+        <p class="p14"><a href="notice.html">이용약관</a></p>
+        <p class="p14"><a href="notice.html">개인정보처리방침</a></p>
+      </div>
+
+      <div class="col-sm-4 f3">
+        <p class="p11">HOMT</p>
+        <span id="span" class="glyphicon glyphicon-map-marker logo glyphicon2"></span><p class="p12"> 충청북도 청주시 서원구 충대로1</p>
+        <p class="p13">충북대학교 소프트웨어학과</p>
+        <span id="span" class="glyphicon glyphicon-phone-alt logo glyphicon2"></span><p class="p12"> 043-261-2260</p>
+      </div>
+    </div>
+    <hr class="hr1">
+    <center><p class="last">Copyright 2020 OpenSource Web Software. All Rights Reserved.</p></center>
+  </div>
+
+  </body>
+</html>

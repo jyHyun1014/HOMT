@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>For your Home Training</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="our-link" id="logininfo">
+            <ul>
+              <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+              <li><a href="/mypage"><span class="glyphicon glyphicon-user"></span> MyPage</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Top -->
+
+  <nav class="navbar navbar-default" id="menu">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/main"><img class="main_logo" src="img/logo.png" alt="logo" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a href="/aboutus">ABOUT US</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WORKOUT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/workout_bodypart">by BodyPart</a></li>
+              <li><a href="/workout_difficulty">by Difficulty</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/customizing">CUSTOMIZING</a></li>
+              <li><a href="/ranking">RANKING</a></li>
+              <li><a href="/calculator">CALCULATOR</a></li>
+              <li><a href="/timer">TIMER/STOP WATCH</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COMMUNITY<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/youtube">YOUTUBE</a></li>
+              <li><a href="/magazine">HEALTH MAGAZINE</a></li>
+              <li><a href="/news">HEALTH NEWS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHERS<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/guide">CENTER GUIDE</a></li>
+              <li><a href="/notice">NOTICE</a></li>
+              <li><a href="/customer">CUSTOMER SERVICES</a></li>
+              <li><a href="/evaluation">EVALUATION</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="h1">Welcome to HOMT</h1>
+  </div>
+
+  <br><br>
+  <div class="title-all text-center">
+    <center>
+      <h1>Today's Workout</h1>
+    </center>
+  </div>
+
+  <div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <img src="img/workout_image/110-0.jpg" alt="Hip Rotations" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>Hip Rotations (Push-up Position)</h3>
+        <p>Abs, Hips, Legs</p>
+      </div>
+    </div>
+
+    <div class="item" href="/Crunch">
+      <img src="img/workout_image/52-0.jpg" alt="Crunch" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>Crunch</h3>
+        <p>Abs</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/workout_image/42-0.jpg" alt="New York" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>Push-up with Single-leg Raise</h3>
+        <p>Arms, Hips, Chest, Full Body, Shoulders</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+
+
+<div class="container container2">
+  <div class="title-all text-center">
+    <center>
+      <h1>Health Magazines</h1>
+    </center>
+  </div>
+  <a href="https://darebee.com/" target="_blank"><img src="img/darebee.jpg" alt="darebee" class="hlogo1"/></a><a href="https://www.health.com/" target="_blank"><img src="img/health.jpg" alt="health" class="img-thumbnail hlogo2"/></a><a href="https://darebee.com/" target="_blank"><img src="img/healthy.jpg" alt="healthy" class="hlogo3"/></a><a href="https://www.healthy-magazine.co.uk/" target="_blank"><img src="img/healthline.jpg" alt="hline" class="img-thumbnail hlogo4"/></a>
+  <hr>
+</div>
+
+
+
+
+  <div class="container container3">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-all text-center">
+          <center>
+            <h1>Health News & Issues</h1>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg3" src="/img/back5.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <p class="post1">제주특별자치도</p>
+              <p class="post2">시리즈</p>
+              <p class="post3">쉽게 하나씩 따라하는 건강 습관</p>
+              <h3>집콕생활로 확"찐"자가 되어버 집콕러들을 위한 실내 운동법</h3>
+              <ul>
+                <li>제자리 걷기-운동법</li>
+                <li>스쿼트-운동법</li>
+                <li>플랭크-운동법</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/G6Y9TJj1" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg1"
+              src="https://post-phinf.pstatic.net/MjAyMDA1MTVfMjQ3/MDAxNTg5NTE3ODM0MTU3.XOLfU-9q13kJK4c38xchfp-Mi_k51W0HuZWxWfIPH38g.2vOj9cdV8N0WK-Iksoal3thLrrwP4rTEyyT4PXflHOYg.JPEG/%EB%A6%AC%EC%8A%A4%ED%8B%B0%ED%81%B4-%EC%9A%B0%EB%A6%AC-%EA%B0%80%EC%A1%B1-%EB%A9%B4%EC%97%AD%EB%A0%A5-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%BD%94%EB%A1%9C%EB%82%9819-%EA%B7%B9%EB%B3%B5-%EB%A9%B4%EC%97%AD%EB%A0%A5-%EB%86%92%EC%9D%B4%EB%8A%94-4%EA%B0%80.jpg"
+              alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <p class="post1">아시아투데이</p>
+              <p class="post2">시리즈</p>
+              <p class="post3">쉽게 하나씩 따라하는 건강 습관</p>
+              <h3>"우리 가족 면역력 높이기" 코로나19 극복 면역력 높이는 4가지 방법</h3>
+              <ul>
+                <li>적게먹기</li>
+                <li>면역력 강화식품 먹기</li>
+                <li>심부 체온 올리기</li>
+                <li>몸 자극하기</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/G85di9EW" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img class="img-fluid blogimg2" src="https://post-phinf.pstatic.net/MjAyMDA1MTNfNCAg/MDAxNTg5MzI4MTkyNDU5.9LEOf2AJydAcsKF7KgxY2hIggw3h-mYdfH2Y3pclwMAg.zTUNPhMPxDGaDz5bbaqVroR2eBzIJi-i0vOg8I9tUMcg.JPEG/202005120952441920.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="title-blog">
+              <p class="post1">매경헬스</p>
+              <p class="post2">시리즈</p>
+              <p class="post3">매경헬스 뉴스</p>
+              <h3>혈액을 건강하게 유지하는 법</h3>
+              <ul>
+                <li>혈액 건강에 좋은 음식 섭취하기</li>
+                <li>혈액 건강 지키는 운동법과 습관</li>
+                <li>혈액 이상 유무 판단, 정기적인 검진 중요</li>
+              </ul>
+            </div>
+          </div>
+          <a href="http://naver.me/GDEdUNF8" target="_blank"><span class="glyphicon glyphicon-eye-open logo logo1"></span></a>
+        </div>
+      </div>
+    </div>
+    <center><a href="/news"><button type="button" class="btn">MORE</button></a></center>
+  </div>
+
+  <div class="container-fluid container1">
+    <div class="row">
+      <div class="col-sm-4 f1">
+        <p class="p11">PRODUCER. HLS</p>
+        <p class="p11">Hyun Ji Yeon</p>
+        <p class="p11">Lee Seung Yeon</p>
+        <p class="p11">So Hee Jin</p>
+      </div>
+
+      <div class="col-sm-4 f2">
+        <p class="p14"><a href="notice.html">공지사항</a></p>
+        <p class="p14"><a href="notice.html">이용약관</a></p>
+        <p class="p14"><a href="notice.html">개인정보처리방침</a></p>
+      </div>
+
+      <div class="col-sm-4 f3">
+        <p class="p11">HOMT</p>
+        <span id="span" class="glyphicon glyphicon-map-marker logo glyphicon2"></span>
+        <p class="p12"> 충청북도 청주시 서원구 충대로1</p>
+        <p class="p13">충북대학교 소프트웨어학과</p>
+        <span id="span" class="glyphicon glyphicon-phone-alt logo glyphicon2"></span>
+        <p class="p12"> 043-261-2260</p>
+      </div>
+    </div>
+    <hr class="hr1">
+    <center>
+      <p class="last">Copyright 2020 OpenSource Web Software. All Rights Reserved.</p>
+    </center>
+  </div>
+
+  </script>
+</body>
+
+</html>
