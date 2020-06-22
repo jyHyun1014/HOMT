@@ -1,5 +1,0 @@
-이미지 출처 링크입니다
-back.jpg:
-<a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2571158">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/MBatty-611710/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2571158">MBatty</a>님의 이미지 입니다.
-logo.png:
-<a href="https://hatchful.shopify.com/></a>
